@@ -1,0 +1,54 @@
+mainPrograms{
+
+    int counter = 7;
+    int i = 0;
+    string str = "World!";
+    print("Check while: ");
+    while (counter > i){
+        print("Hello");
+        print (str) ;
+        print(i);
+        i++;
+    }
+
+    if (i == 7) {
+        print("Okey ==");
+    }
+
+    if ( i < 10 ) {
+        print("Okey <");
+    }
+
+    if ( i > 5) {
+        print("Okey >");
+    }
+
+    print("Check if not: ");
+
+    if not (i == 6) {
+        print("Okey !=");
+    }
+
+    if not ( i > 10 ) {
+        print("Okey <= ");
+    }
+
+    if not ( i < 5) {
+        print("Okey >=");
+    }
+
+    print("Check goto: ");
+
+    int true = 1;
+    int false = 0;
+
+    @ label;
+    print(i);
+    if (true == 1) {
+        true = 0;
+        if ("W" < str) {
+            i++;
+            goto label;
+        }
+    }
+}
